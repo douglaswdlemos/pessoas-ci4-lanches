@@ -1,0 +1,59 @@
+{
+	"name": "codeigniter4/appstarter",
+	"type": "project",
+	"description": "CodeIgniter4 starter app",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"require": {
+		"php": ">=7.2",
+		"codeigniter4/framework": "^4",
+		"phpoffice/phpspreadsheet": "^1.15",
+		"datatables.net/datatables.net": "dev-master",
+		"datatables.net/datatables.net-dt": "dev-master",
+		"datatables.net/datatables.net-autofill": "dev-master",
+		"datatables.net/datatables.net-autofill-dt": "dev-master",
+		"datatables.net/datatables.net-colreorder": "dev-master",
+		"datatables.net/datatables.net-colreorder-dt": "dev-master",
+		"datatables.net/datatables.net-fixedcolumns": "dev-master",
+		"datatables.net/datatables.net-fixedcolumns-dt": "dev-master",
+		"datatables.net/datatables.net-fixedheader": "dev-master",
+		"datatables.net/datatables.net-fixedheader-dt": "dev-master",
+		"datatables.net/datatables.net-keytable": "dev-master",
+		"datatables.net/datatables.net-keytable-dt": "dev-master",
+		"datatables.net/datatables.net-responsive": "dev-master",
+		"datatables.net/datatables.net-responsive-dt": "dev-master",
+		"datatables.net/datatables.net-rowgroup": "dev-master",
+		"datatables.net/datatables.net-rowgroup-dt": "dev-master",
+		"datatables.net/datatables.net-rowreorder": "dev-master",
+		"datatables.net/datatables.net-rowreorder-dt": "dev-master",
+		"datatables.net/datatables.net-scroller": "dev-master",
+		"datatables.net/datatables.net-scroller-dt": "dev-master",
+		"datatables.net/datatables.net-searchbuilder": "dev-master",
+		"datatables.net/datatables.net-searchbuilder-dt": "dev-master",
+		"datatables.net/datatables.net-searchpanes": "dev-master",
+		"datatables.net/datatables.net-searchpanes-dt": "dev-master",
+		"datatables.net/datatables.net-select": "dev-master",
+		"datatables.net/datatables.net-select-dt": "dev-master"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "^1.9@dev",
+		"mikey179/vfsstream": "1.6.*",
+		"phpunit/phpunit": "^8.5"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"@composer dump-autoload"
+		],
+		"test": "phpunit"
+	},
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"source": "https://github.com/codeigniter4/CodeIgniter4",
+		"slack": "https://codeigniterchat.slack.com"
+	}
+}
